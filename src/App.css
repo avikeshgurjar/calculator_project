@@ -1,0 +1,73 @@
+
+#buttons{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(64px, 1fr));
+  gap: 0.75rem;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 30px;
+  max-width: 420px;
+  width: 100%;
+
+}
+input{
+  padding: 1rem;
+  font-size: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background-color: var(--input);
+  color: var(--text);
+  text-align: right;
+}
+button{
+  padding: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background-color: var(--button);
+  color: var(--text);
+  cursor: pointer;
+  border-radius: 50%; 
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 15px -3px, rgba(0, 0, 0, 0.25) 0px 4px 6px -2px;
+}
+.history-log {
+  width: 100%;
+  max-width: 420px;
+  margin: 20px auto 0;
+  text-align: left;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  max-height: 45vh;
+  overflow-y: auto;
+}
+.history-log h3 {
+  margin-top: 0;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.history-log ol {
+  padding-left: 20px;
+  margin: 5px;
+}
+
+.history-log li {
+  margin-bottom: 8px;
+  font-family: monospace;
+  font-size: 1.1rem;
+  
+  padding-left: 10px;
+}
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #buttons{
+    gap: 0.5rem;
+  }
+  input{
+    font-size: 1.5rem;
+  }
+}
